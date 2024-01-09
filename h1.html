@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="s1.css">
+  <title>Blog</title>
+</head>
+<body>
+  <div class="container">
+    <h1>My Blog</h1>
+
+    <!-- Form for writing new posts -->
+    <form action="/post" method="post">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="content">Content:</label>
+      <textarea id="content" name="content" required></textarea>
+
+      <button type="submit">Publish</button>
+    </form>
+
+    <!-- List of existing posts -->
+    <div class="posts">
+      <!-- Posts will be dynamically added here using Node.js and MongoDB -->
+    </div>
+  </div>
+</body>
+</html>
